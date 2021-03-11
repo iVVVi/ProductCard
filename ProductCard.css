@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .rectangle {
@@ -33,7 +34,6 @@ body {
 }
 
 .item:link {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     font-weight: bold;
     color: black;
@@ -41,7 +41,6 @@ body {
 }
 
 .item:visited {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     font-weight: bold;
     color: rgb(108, 64, 133);
@@ -49,7 +48,6 @@ body {
 } 
 
 .item:hover {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     font-weight: bold;
     color: black;
@@ -57,7 +55,6 @@ body {
 }
 
 .code {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     padding: 0px 15px 15px 15px;
 }
@@ -66,10 +63,26 @@ body {
     display: flex;
     flex-direction: row;
     padding: 0px 0px 0px 15px;
+    justify-content: space-between;
+}
+
+.stars {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.star {
+    flex: 0 0 15px;
+    fill: #E5E5E5;
+}
+
+.star--active {
+    fill: #FFDE6A;
 }
 
 .rev__number {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex: 0 0 auto;
     font-size: 11px;
     padding: 0px 15px 0px 20px;
 }
@@ -81,15 +94,15 @@ body {
 }
 
 .price {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     padding-right: 40px;
+    line-height: 15px;
 }
 
 .price__uah {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     font-weight: bold;
+    line-height: 15px;
 }
 
 .button {
@@ -100,21 +113,21 @@ body {
 }
 
 .butt__text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     font-weight: bold;
     padding: 9px 50px 9px 50px;
     color: #00ACDC;
     border: 1px solid #00ACDC;
     border-radius: 5px;
+    outline: none;
 }
 
 .butt__text:hover {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     font-weight: bold;
     padding: 9px 50px 9px 50px;
     color: #000000;
     border: 1px solid #000000;
     border-radius: 5px;
+    background: rgb(199, 190, 199);
 }
